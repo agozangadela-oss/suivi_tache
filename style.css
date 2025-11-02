@@ -1,0 +1,127 @@
+/* style.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .app-container {
+    background: #fff;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 1.8rem;
+    color: #333;
+  }
+  
+  header p {
+    color: #777;
+    font-size: 0.9rem;
+  }
+  
+  .task-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  #taskInput {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #764ba2;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  #addTaskBtn {
+    background: #764ba2;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #addTaskBtn:hover {
+    background: #5b3787;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .filters button {
+    background: #f0f0f0;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .filters button.active,
+  .filters button:hover {
+    background: #764ba2;
+    color: white;
+  }
+  
+  #taskList {
+    list-style: none;
+  }
+  
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+  }
+  
+  .task-item.completed span {
+    text-decoration: line-through;
+    color: #999;
+  }
+  
+  .task-item button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #764ba2;
+    font-weight: bold;
+  }
+  
+  footer {
+    text-align: center;
+    color: #777;
+    font-size: 0.8rem;
+    margin-top: 20px;
+  }
+  

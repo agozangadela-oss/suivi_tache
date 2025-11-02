@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestionnaire de tâches</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>📝 Gestionnaire de tâches</h1>
+      <p>Organisez vos journées efficacement</p>
+    </header>
+
+    <main>
+      <div class="task-input">
+        <input type="text" id="taskInput" placeholder="Ajouter une nouvelle tâche...">
+        <button id="addTaskBtn">Ajouter</button>
+      </div>
+
+      <div class="filters">
+        <button data-filter="all" class="active">Toutes</button>
+        <button data-filter="active">Actives</button>
+        <button data-filter="completed">Terminées</button>
+        <button id="clearCompleted">Effacer terminées</button>
+      </div>
+
+      <ul id="taskList"></ul>
+    </main>
+
+    <footer>
+      <p>Fait avec ❤️ en HTML, CSS et JavaScript</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
